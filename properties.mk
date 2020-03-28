@@ -140,7 +140,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.cpurend.vsync=true \
-    debug.sf.disable_backpressure=0 \
+    debug.sf.disable_backpressure=1 \
     debug.sf.enable_gl_backpressure=1 \
     debug.sf.enable_hwc_vds=1 \
     debug.sf.hw=1 \
