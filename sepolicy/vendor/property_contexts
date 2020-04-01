@@ -53,3 +53,4 @@ vendor.thermal.config                   u:object_r:vendor_thermal_prop:s0
 
 # Wlan
 persist.vendor.wigig.npt.enable         u:object_r:vendor_default_prop:s0
+wifi.active.interface                   u:object_r:exported_wifi_prop:s0
