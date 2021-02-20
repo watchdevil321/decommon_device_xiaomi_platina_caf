@@ -16,10 +16,8 @@ PRODUCT_ALWAYS_PREOPT_EXTRACTED_APK := true
 # ANT+
 PRODUCT_PACKAGES += \
     AntHalService \
-    com.dsi.ant.antradio_library
-
-PRODUCT_COPY_FILES += \
-    external/ant-wireless/antradio-library/com.dsi.ant.antradio_library.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.dsi.ant.antradio_library.xml
+    antradio_app \
+    libantradio
 
 # ANX Camera
 $(call inherit-product-if-exists, vendor/xiaomi/anx-camera/anx-camera.mk)
