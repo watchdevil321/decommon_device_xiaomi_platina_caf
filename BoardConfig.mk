@@ -104,12 +104,9 @@ USE_DEVICE_SPECIFIC_IPACFG_MGR := true
 # Kernel
 BOARD_KERNEL_CMDLINE := \
     androidboot.configfs=true \
-    androidboot.console=ttyMSM0 \
     androidboot.hardware=qcom \
     androidboot.init_fatal_reboot_target=recovery \
     androidboot.usbcontroller=a800000.dwc3 \
-    console=ttyMSM0,115200n8 \
-    earlycon=msm_serial_dm,0xc170000 \
     ehci-hcd.park=3 \
     kpti=off \
     loop.max_part=7 \
