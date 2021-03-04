@@ -136,7 +136,9 @@ PRODUCT_PRODUCT_PROPERTIES += \
     dalvik.vm.dex2oat-threads=4 \
     dalvik.vm.image-dex2oat-cpu-set=4,5,6,7 \
     dalvik.vm.image-dex2oat-filter=everything \
-    dalvik.vm.image-dex2oat-threads=4
+    dalvik.vm.image-dex2oat-threads=4 \
+    dalvik.vm.dex2oat-minidebuginfo=false \
+    dalvik.vm.minidebuginfo=false
 
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
