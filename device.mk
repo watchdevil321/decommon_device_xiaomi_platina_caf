@@ -23,6 +23,10 @@
 
 DEVICE_PATH := device/xiaomi/platina
 
+# Adapt Launch 
+PRODUCT_COPY_FILES += \
+$(DEVICE_PATH)/configs/lm/AdaptLaunchFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/AdaptLaunchFeature.xml \
+
 # ANT+
 PRODUCT_PACKAGES += \
     AntHalService \
