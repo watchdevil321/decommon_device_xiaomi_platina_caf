@@ -6,6 +6,12 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# Required!
+export DEVICE=platina
+export VENDOR=xiaomi
+
+export DEVICE_BRINGUP_YEAR=2020
+
 set -e
 
 # Load extract_utils and do some sanity checks
@@ -25,7 +31,7 @@ source "${HELPER}"
 setup_vendor "${DEVICE_COMMON}" "${VENDOR}" "${ANDROID_ROOT}" true
 
 # Warning headers and guards
-write_headers "jasmine_sprout jason lavender platina twolip wayne whyred"
+write_headers "platina"
 
 # The standard common blobs
 write_makefiles "${MY_DIR}/proprietary-files.txt" true
@@ -52,7 +58,7 @@ if [ -s "${MY_DIR}/../$DEVICE_SPECIFIED_COMMON/proprietary-files.txt" ]; then
     # Finish
     write_footers
 
-    DEVICE_COMMON="sdm660-common"
+    DEVICE_COMMON="platina"
 fi
 
 if [ -s "${MY_DIR}/../${DEVICE}/proprietary-files.txt" ]; then

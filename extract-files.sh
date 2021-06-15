@@ -6,6 +6,12 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# Required!
+export DEVICE=platina
+export VENDOR=xiaomi
+
+export DEVICE_BRINGUP_YEAR=2020
+
 set -e
 
 # Load extract_utils and do some sanity checks
