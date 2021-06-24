@@ -97,6 +97,10 @@ DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/manifests/compatibility_matrix.xml
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_platina
 TARGET_RECOVERY_DEVICE_MODULES := libinit_platina
 
+# IPA
+USE_DEVICE_SPECIFIC_DATA_IPA_CFG_MGR := true
+USE_DEVICE_SPECIFIC_IPACFG_MGR := true
+
 # Kernel
 BOARD_KERNEL_CMDLINE := \
     androidboot.configfs=true \
