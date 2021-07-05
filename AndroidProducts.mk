@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_platina.mk
+    $(LOCAL_DIR)/conquer_platina.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_platina-user \
-    lineage_platina-userdebug \
-    lineage_platina-eng
+    conquer_platina-user \
+    conquer_platina-userdebug \
+    conquer_platina-eng
