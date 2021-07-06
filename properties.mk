@@ -78,8 +78,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.audio.feature.snd_mon.enable=true
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.config.media_vol_steps=25 \
-    ro.config.vc_call_vol_steps=7 \
+    ro.config.media_vol_steps=30 \
+    ro.config.vc_call_vol_steps=11 \
     vendor.audio.adm.buffering.ms=6
 
 # Bluetooth
