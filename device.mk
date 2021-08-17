@@ -73,6 +73,7 @@ PRODUCT_PACKAGES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
+    libldacBT_bco \
     vendor.qti.hardware.btconfigstore@1.0.vendor
 
 # Camera
