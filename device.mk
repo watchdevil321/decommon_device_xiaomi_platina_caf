@@ -181,12 +181,6 @@ PRODUCT_PACKAGES += \
     libqti_vndfwk_detect \
     libqti_vndfwk_detect.vendor
 
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    ro.vendor.qti.va_aosp.support=1
-
-PRODUCT_ODM_PROPERTIES += \
-    ro.vendor.qti.va_odm.support=1
-
 # GPS / Location
 PRODUCT_PACKAGES += \
     android.hardware.gnss@2.0-impl-qti \
@@ -222,9 +216,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/idc/uinput-fpc.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/uinput-fpc.idc \
     $(DEVICE_PATH)/idc/uinput-goodix.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/uinput-goodix.idc
-
-# Inherit properties
-$(call inherit-product, $(DEVICE_PATH)/properties.mk)
 
 # Init
 PRODUCT_PACKAGES += \
