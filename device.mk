@@ -138,10 +138,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/display/display_id_0.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/displayconfig/display_id_0.xml
 
-# Doze
-PRODUCT_PACKAGES += \
-    XiaomiDoze
-
 # DPM
 PRODUCT_PACKAGES += \
     libshim_dpmframework
@@ -296,6 +292,10 @@ PRODUCT_PACKAGES += \
 DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay \
     $(DEVICE_PATH)/overlay-lineage
+
+# Parts
+PRODUCT_PACKAGES += \
+    XiaomiParts
 
 # Perfd (dummy)
 PRODUCT_PACKAGES += \
