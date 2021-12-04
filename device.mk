@@ -10,9 +10,6 @@ DEVICE_PATH := device/xiaomi/platina
 PRODUCT_COPY_FILES += \
 $(DEVICE_PATH)/configs/lm/AdaptLaunchFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/AdaptLaunchFeature.xml \
 
-# Always preopt extracted APKs to prevent extracting out of the APK for gms modules
-PRODUCT_ALWAYS_PREOPT_EXTRACTED_APK := true
-
 # ANT+
 PRODUCT_PACKAGES += \
     AntHalService \
@@ -98,9 +95,6 @@ PRODUCT_COPY_FILES += \
 # Component overrides
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml
-
-# Dex
-PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := speed-profile
 
 # Display
 PRODUCT_PACKAGES += \
@@ -406,12 +400,6 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/google/interfaces \
     hardware/google/pixel
 
-# Strip some debug packages
-USE_DEX2OAT_DEBUG := false
-PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
-PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
-WITH_DEXPREOPT_DEBUG_INFO := false
-
 # Tethering
 PRODUCT_PACKAGES += \
     TetheringConfigOverlay
@@ -434,10 +422,6 @@ PRODUCT_PACKAGES += \
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service.basic
-
-# Use a profile based boot image for this device
-PRODUCT_USE_PROFILE_FOR_BOOT_IMAGE := true
-PRODUCT_DEX_PREOPT_BOOT_IMAGE_PROFILE_LOCATION := frameworks/base/config/boot-image-profile.txt
 
 # Vibrator
 PRODUCT_PACKAGES += \
