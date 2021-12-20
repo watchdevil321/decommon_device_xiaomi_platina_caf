@@ -24,6 +24,9 @@ $(call inherit-product, vendor/conquer/config/common.mk)
 # conquerOS build type
 CONQUER_BUILD_TYPE := OFFICIAL
 
+# Bootanimation
+TARGET_BOOT_ANIMATION_RES := 1080
+
 # Inherit from platina device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
