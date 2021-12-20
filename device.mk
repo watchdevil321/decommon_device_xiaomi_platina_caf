@@ -257,11 +257,6 @@ PRODUCT_COPY_FILES += \
 # MIUI Camera
 $(call inherit-product-if-exists, vendor/xiaomi/MiuiCamera/config.mk)
 
-# Offline charger
-PRODUCT_PACKAGES += \
-    charger_res_images \
-    product_charger_res_images
-
 # OMX
 PRODUCT_PACKAGES += \
     libc2dcolorconvert \
