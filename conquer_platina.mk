@@ -21,6 +21,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit some common conquerOS stuff
 $(call inherit-product, vendor/conquer/config/common.mk)
 
+# conquerOS build type
+CONQUER_BUILD_TYPE := OFFICIAL
+
 # Inherit from platina device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
