@@ -470,4 +470,7 @@
             2 - Global actions menu
     -->
     <integer name="config_keyChordPowerVolumeUp">1</integer>
+
+    <!-- Enable double tap to wake on doze -->
+    <string name="config_dozeDoubleTapSensorType">com.google.sensor.double_touch</string>
 </resources>
