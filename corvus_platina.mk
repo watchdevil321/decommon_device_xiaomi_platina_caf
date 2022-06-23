@@ -24,6 +24,7 @@ $(call inherit-product, vendor/corvus/config/common_full_phone.mk)
 # Stuff
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
 TARGET_SUPPORTS_QUICK_TAP := true
+CORVUS_MAINTAINER=V•PrAyOgA
 
 # Bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
