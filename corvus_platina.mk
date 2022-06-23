@@ -19,10 +19,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common conquerOS stuff
-$(call inherit-product, vendor/conquer/config/common.mk)
+$(call inherit-product, vendor/corvus/config/common_full_phone.mk)
 
-# conquerOS build type
-CONQUER_BUILD_TYPE := OFFICIAL
+# Stuff
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
+TARGET_SUPPORTS_QUICK_TAP := true
+CORVUS_MAINTAINER=V•PrAyOgA
 
 # Bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
@@ -33,7 +35,7 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := platina
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := conquer_platina
+PRODUCT_NAME := corvus_platina
 PRODUCT_MODEL := MI 8 Lite
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi

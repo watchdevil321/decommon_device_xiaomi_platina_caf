@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/conquer_platina.mk
+    $(LOCAL_DIR)/corvus_platina.mk
 
 COMMON_LUNCH_CHOICES := \
-    conquer_platina-user \
-    conquer_platina-userdebug \
-    conquer_platina-eng
+    corvus_platina-user \
+    corvus_platina-userdebug \
+    corvus_platina-eng
